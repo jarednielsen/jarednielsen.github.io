@@ -1,0 +1,28 @@
+#header {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.header__link {
+    border: 1px white;
+    padding: 4px;
+    color: white;
+}
+
+#main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#portfolio {
+    background-color: lightblue;
+    width: 80%
+
+}
+
+.portfolio-blurb__image {
+    width: 50px;
+}
