@@ -2,3 +2,12 @@
     max-width: 100%;
     margin: 4px;
 }
+
+.intro-blurb {
+    margin: 16px 0px;
+    font-size: 18px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
