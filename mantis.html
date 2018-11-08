@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Jared T Nielsen - Mantis</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/blog-post.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">Jared T Nielsen</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="./index.html">Portfolio
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="static/jared_nielsen_resume.pdf">Resume</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+
+          <!-- Title -->
+          <h1 class="mt-4">Mantis</h1>
+
+          <hr>
+
+          <!-- Preview Image -->
+          <img class="img-fluid rounded" src="static/mantis_user_dashboard_crop.png" alt="">
+
+          <hr>
+
+          <!-- Post Content -->
+          <p class="lead">Built a web platform for a gun training system. Live production database handling 25,000 unique users, 
+            private group social network system.</p>
+
+          <p><a href="mantisx.com">Mantis</a> is a firearms training system, using high-precision measurements of acceleration and gyroscopic title
+          to improve shooting. When I started working, all data was stored locally on the user's phone, meaning that deleting the app or changing phones
+          would lose all data. Additionally, there were limited diagnostics and user data.</p>
+
+          <p>Over the course of two years, I built a central database on AWS and PostgreSQL, which now holds over 8 million shots.
+              I worked with the two app developers to create stable APIs and secure authentication for both iOS and Android platforms.
+
+          </p>
+
+          <img class="blog-image" src="static/mantis_shot_zoom.gif" />
+
+          <p>Animation of the user profile page with D3.js and vector graphics.</p>
+
+          <p>As seen above, I built the user-facing frontend. This included a user profile page, pictured above,
+              and a leaderboard interface for private and public groups. The groups feature was requested by several
+              large clients, including Cabela's and the U.S. Marines. Privacy and security were first priority, given the clients.
+          </p>
+
+          <p>
+            I also implemented an improved shot detection algorithm, based on 1-dimensional convolutional neural nets. This improved shot detection
+            accuracy by ~50% while reducing the false positive rate. 
+          </p>
+
+          <img class="blog-image" src="static/mantis_shots_sidebyside.jpg" />
+
+          <p>
+              The above plots display acceleration magnitude over time. Separating positive from negative examples is non-trivial,
+              but learned 1-D convolutions do a good job.
+          </p>
+
+          <hr>
+
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

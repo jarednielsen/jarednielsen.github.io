@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Jared T Nielsen - Mantis</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/blog-post.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">Jared T Nielsen</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="./index.html">Portfolio
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="static/jared_nielsen_resume.pdf">Resume</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+
+          <!-- Title -->
+          <h1 class="mt-4">Generative Adversarial Networks</h1>
+
+          <!-- Author -->
+          <!-- <p class="lead">
+            by
+            <a href="#">Start Bootstrap</a>
+          </p> -->
+
+          <!-- <hr> -->
+
+          <!-- Date/Time -->
+          <!-- <p>Posted on January 1, 2018 at 12:00 PM</p> -->
+
+          <hr>
+
+          <!-- Preview Image -->
+          <img class="img-fluid rounded" src="static/gan/2018-10-30_201951_epoch24_generated.jpg" alt="">
+
+          <hr>
+
+          <!-- Post Content -->
+          <p class="lead">Can deep learning generate novel, realistic images? By pitting a generator against a critic,
+            competition between algorithms produces surprisingly good results.</p>
+
+          <p>Generative Adversarial Networks (GANs) are an interesting way to teach a computer image representations.
+              The basic framework: two algorithms are pitted against each other. One (the generator) trains to distinguish between real images and fake image,
+              while the other (the critic) is trained to fool the first. These processes improve in lockstep, though 
+              care must be taken to ensure that neither gets too smart too fast. For example, a perfect critic wouldn't give
+              any meaningful learning signal to the generator.
+          </p>
+
+          <p>The details are mathematically involved - see a <a href="https://medium.com/@jonathan_hui/gan-wasserstein-gan-wgan-gp-6a1a2aa1b490"></a>more involved explanation</a> -
+            but here are some results. I trained for 25 epochs on the CelebA dataset (~200,000 images).
+            Below are results at epoch 0, 1, 2, 10, and 24.
+          </p>
+
+          <img class="blog-image" src="static/gan/2018-10-30_150019_epoch0_interpolated.jpg" />
+          <img class="blog-image" src="static/gan/2018-10-30_151303_epoch1_interpolated.jpg" />
+          <img class="blog-image" src="static/gan/2018-10-30_152547_epoch2_interpolated.jpg" />
+          <img class="blog-image" src="static/gan/2018-10-30_170755_epoch10_interpolated.jpg" />
+          <img class="blog-image" src="static/gan/2018-10-30_201951_epoch24_interpolated.jpg" />
+
+          <p>
+              We see interpolation in "face space" from left to right, as the GAN performs linear interpolation in the latent space,
+              then maps to a face. Compare this with pixel interpolation, which is much less likely to produce a face in the middle.
+          </p>
+
+          <p>
+            Below we see some randomly generated samples at epochs 0, 1, 2, 10, and 24.
+          </p>
+
+          <div>
+            Epoch 0<br>
+          <img class="blog-image" src="static/gan/2018-10-30_150019_epoch0_generated.jpg" />
+          <br>Epoch 1<br>
+          <img class="blog-image" src="static/gan/2018-10-30_151303_epoch1_generated.jpg" />
+          <br>Epoch 2<br>
+          <img class="blog-image" src="static/gan/2018-10-30_152547_epoch2_generated.jpg" />
+          <br>Epoch 10<br>
+          <img class="blog-image" src="static/gan/2018-10-30_170755_epoch10_generated.jpg" />
+          <br>Epoch 24<br>
+          <img class="blog-image" src="static/gan/2018-10-30_201951_epoch24_generated.jpg" />
+        </div>
+
+        Full code is available <a href="https://jaredtn.com/projects/wgan-gp.html">here</a>.
+
+          <hr>
+
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <!-- <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Jared Nielsen</p>
+      </div> -->
+      <!-- /.container -->
+    <!-- </footer> -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
