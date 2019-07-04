@@ -1,0 +1,48 @@
+.blog-image {
+    max-width: 100%;
+    margin: 4px;
+}
+
+.intro-blurb {
+    margin: 16px 0px;
+    font-size: 18px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.col-lg-8 {
+    flex: 0 0 100%;
+    max-width: 75%;
+}
+
+.row {
+    justify-content: center;
+}
+
+.image-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+}
+
+.intro-blurb {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.profile-pic {
+    height: 100px;
+    margin-right: 8px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1.2em;
+}
